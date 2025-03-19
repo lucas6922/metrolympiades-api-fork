@@ -1,5 +1,19 @@
 # 📘 API Metrolympiades
 
+## Installation
+
+`npm install`
+
+`npx prisma migrate dev --name init`
+
+`npx prisma generate`
+
+## Start the project
+
+`npm run dev`
+
+---
+
 ## Base URL
 
 `https://localhost:3000`
