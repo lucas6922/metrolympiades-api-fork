@@ -207,7 +207,7 @@ Authorization: Bearer jwt_token
 
 ```json
 {
-  "name"; "Football"
+	"name": "Football"
 }
 ```
 
