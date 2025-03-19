@@ -255,6 +255,12 @@ Authorization: Bearer jwt_token
 
 **DELETE** `/matches/:matchId`
 
+#### Headers
+
+```
+Authorization: Bearer jwt_token
+```
+
 #### Réponse
 
 ```json
