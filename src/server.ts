@@ -5,11 +5,17 @@ import { teams } from './routes/teams'
 import { matches } from './routes/matches'
 import { activities } from './routes/activities'
 import { ranking } from './routes/ranking'
+import fastifyCors from '@fastify/cors'
 
 dotenv.config()
 
 const fastify = Fastify({ logger: true })
 
+fastify.register(fastifyCors, {
+	origin: '*',
+	methods: ['GET', 'POST', 'PUT', 'DELETE'],
+	allowedHeaders: ['Content-Type', 'Authorization'],
+})
 fastify.register(auth)
 fastify.register(teams)
 fastify.register(matches)
